@@ -20,9 +20,13 @@ Personal data collection app
   ![image](https://github.com/kncode74/Personal_data_collection_app/assets/69451462/636a077c-eca4-4a4c-9c8a-60f30df1a2bf)
      - ตรวจสอบ textFormField 
      - แจ้งเตือนให้กรอกข้อมูล
+     ![image](https://github.com/kncode74/Personal_data_collection_app/assets/69451462/530f3a57-e478-4471-9ee2-a2bc830b597b)
+
   3. หลังจากกรอกข้อมูลทุกช่องครบ จะแสดงข้อมูลที่กรอกไปแล้ว
   ![image](https://github.com/kncode74/Personal_data_collection_app/assets/69451462/1b3cd41a-e193-4e14-b0bc-0984dd8b78e1)
   4. กดบันทึกข้อมูล จะเพิ่มข้อมูลไปยังหน้าหลายการข้อมูลส่วนตัว
    ![image](https://github.com/kncode74/Personal_data_collection_app/assets/69451462/da82c9ff-c7e5-499f-b9f3-8a5ef3179125)
   5. หน้าแสดงรายละเอียดข้อมูลรายบุลคล
    ![image](https://github.com/kncode74/Personal_data_collection_app/assets/69451462/e1dbd147-6b79-47d5-81ab-7e27c4e3b3a0)
+  6. ปุ่มลบรายชื่อ Confirm Dialog
+    ![image](https://github.com/kncode74/Personal_data_collection_app/assets/69451462/8f1fff3a-b9a4-4089-ae82-cf3b94505772)
