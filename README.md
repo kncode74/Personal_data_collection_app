@@ -1,16 +1,14 @@
-# store
+Flutter version 3.10.4
+Android SDK version 33.0.2
+Android Studio (version 2022.1)
+VS Code (version 1.79.0)
 
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Personal data collection app
+ใช้ State Management  Learn : 3 days 
+ 1. เก็บข้อมูล Widget Tapbar แบ่งเป็น
+    1.  ข้อมูลส่วนตัว
+    2.  ข้อมูลที่อยู่ตามบัตรประจำตัวประชาชน
+ 2. แบบฟอร์มกรอกข้อมูล ใช้ Widget Stepper 
+    1. ปุ่มเพิ่มรายชื่อ
+    2. ปุ่มลบรายชื่อ มี Confirm Dialog 
+ 3. หน้าแสดงรายละเอียดข้อมูลแต่ละบุคคล
