@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:store/allname.dart';
-import 'package:store/inputForm.dart';
 import 'package:store/province.dart';
 import 'package:store/stepper.dart';
 
@@ -16,7 +15,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Personal Data Collection'),
+        title: const Text('Personal Data Collection'),
       ),
       body: DefaultTabController(
         length: 2,
@@ -39,7 +38,7 @@ class _HomePageState extends State<HomePage> {
                 ),
               ],
             ),
-            Expanded(
+            const Expanded(
               child: TabBarView(
                 children: [
                   AllNamesPage(),
@@ -55,11 +54,11 @@ class _HomePageState extends State<HomePage> {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => StepperForm(),
+              builder: (context) => const StepperForm(),
             ),
           );
         },
-        child: Icon(Icons.add),
+        child: const Icon(Icons.add),
       ),
     );
   }

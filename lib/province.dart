@@ -12,7 +12,7 @@ class _NamesByProvincePageState extends State<NamesByProvincePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView.builder(itemBuilder: (context, int index) {
-        return Card(
+        return const Card(
           child: ListTile(
             leading: CircleAvatar(
                 child: FittedBox(

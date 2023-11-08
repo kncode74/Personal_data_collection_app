@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:store/homapage.dart';
-import 'package:store/models/person.dart';
 import 'package:store/provider/dataofperson.dart';
 
 class PersonalData extends StatefulWidget {
@@ -27,7 +26,7 @@ class _PersonalDataState extends State<PersonalData> {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: HomePage(),
+        home: const HomePage(),
       ),
     );
   }

@@ -109,7 +109,7 @@ class _StepperFormState extends State<StepperForm> {
               children: [
                 TextFormField(
                   decoration:
-                      new InputDecoration(labelText: 'รหัสประจำตัวประชาชน'),
+                      const InputDecoration(labelText: 'รหัสประจำตัวประชาชน'),
                   autofocus: true,
                   controller: idCard,
                   validator: (str) {
@@ -239,64 +239,62 @@ class _StepperFormState extends State<StepperForm> {
               ],
             )),
         Step(
-            title: Text('สิ้นสุด'),
+            title: const Text('สิ้นสุด'),
             isActive: _currentStep >= 2,
             state: _currentStep >= 2 ? StepState.complete : StepState.disabled,
-            content: Container(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: [
-                  Text('รหัสประจำตัวประชาชน:${idCard.text}'),
-                  Text('ชื่อ-นามสกุล:${names.text}'),
-                  Text('ชื่อเล่น:${nickname.text}'),
-                  Text('วันเกิด:${birthday.text}'),
-                  Text('เบอร์มือถือ:${numPhone.text}'),
-                  Text('บ้านเลขที่:${noHose.text}'),
-                  Text('ตำบล/เขต:${tombon.text}'),
-                  Text('อำเภอ/แขวง:${aomphue.text}'),
-                  Text('รหัสไปรษณีย์:${idCard.text}'),
-                  ElevatedButton(
-                      onPressed: () {
-                        //เช็คค่าว่าง
-                        if (formKey.currentState!.validate()) {
-                          var idcard1 = idCard.text;
-                          var names1 = names.text;
-                          var nick1 = nickname.text;
-                          var datebirth = birthday.text;
-                          var number = numPhone.text;
+            content: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                Text('รหัสประจำตัวประชาชน:${idCard.text}'),
+                Text('ชื่อ-นามสกุล:${names.text}'),
+                Text('ชื่อเล่น:${nickname.text}'),
+                Text('วันเกิด:${birthday.text}'),
+                Text('เบอร์มือถือ:${numPhone.text}'),
+                Text('บ้านเลขที่:${noHose.text}'),
+                Text('ตำบล/เขต:${tombon.text}'),
+                Text('อำเภอ/แขวง:${aomphue.text}'),
+                Text('รหัสไปรษณีย์:${idCard.text}'),
+                ElevatedButton(
+                    onPressed: () {
+                      //เช็คค่าว่าง
+                      if (formKey.currentState!.validate()) {
+                        var idcard1 = idCard.text;
+                        var names1 = names.text;
+                        var nick1 = nickname.text;
+                        var datebirth = birthday.text;
+                        var number = numPhone.text;
 
-                          var no = noHose.text;
-                          var tombon1 = tombon.text;
-                          var aumpeu = aomphue.text;
-                          var province1 = province.text;
-                          var idPro = id.text;
+                        var no = noHose.text;
+                        var tombon1 = tombon.text;
+                        var aumpeu = aomphue.text;
+                        var province1 = province.text;
+                        var idPro = id.text;
 
-                          //เตรียมข้อมูล
-                          DataPeople statement = DataPeople(
-                            idcard: idcard1,
-                            names: names1,
-                            nickname: nick1,
-                            birthDay: datebirth,
-                            phone: number,
-                            numberHouse: no,
-                            tombon: tombon1,
-                            aomphe: aumpeu,
-                            province: province1,
-                            id: idPro,
-                          ); //object
+                        //เตรียมข้อมูล
+                        DataPeople statementlatest = DataPeople(
+                          idcard: idcard1,
+                          names: names1,
+                          nickname: nick1,
+                          birthDay: datebirth,
+                          phone: number,
+                          numberHouse: no,
+                          tombon: tombon1,
+                          aomphe: aumpeu,
+                          province: province1,
+                          id: idPro,
+                        ); //object
 
-                          //เรียกใช้ provider
-                          var provider =
-                              Provider.of<DataOfPerson>(context, listen: false);
-                          provider.addDataPeople(statement);
+                        //เรียกใช้ provider
+                        var provider =
+                            Provider.of<DataOfPerson>(context, listen: false);
+                        provider.addDataPeople(statementlatest);
 
-                          Navigator.pop(context);
-                        }
-                      },
-                      child: const Text('บันทึกข้อมูล'))
-                ],
-              ),
+                        Navigator.pop(context);
+                      }
+                    },
+                    child: const Text('บันทึกข้อมูล'))
+              ],
             ))
       ];
 }

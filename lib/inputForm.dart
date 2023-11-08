@@ -16,7 +16,7 @@ class _InformationState extends State<Information> {
 //controller
   final titleContro = TextEditingController();
   final dateOfBirth = TextEditingController();
-  final Phone = TextEditingController();
+  final phone = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,7 +51,7 @@ class _InformationState extends State<Information> {
               ),
               TextFormField(
                 decoration: new InputDecoration(labelText: 'เบอร์โทรศัพท์'),
-                controller: Phone,
+                controller: phone,
                 validator: (str) {
                   if (str!.isEmpty) {
                     return "กรุณากรอกวันเกิด";

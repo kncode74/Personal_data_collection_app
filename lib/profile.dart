@@ -15,7 +15,7 @@ class _MyprofileState extends State<Myprofile> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Profile detail'),
+          title: const Text('Profile detail'),
         ),
         body: Consumer(
           builder: (context, DataOfPerson provider, child) {

@@ -5,7 +5,6 @@ import 'package:store/alertDelete.dart';
 import 'package:store/models/person.dart';
 import 'package:store/profile.dart';
 import 'package:store/provider/dataofperson.dart';
-import 'package:store/stepper.dart';
 
 class AllNamesPage extends StatefulWidget {
   const AllNamesPage({super.key});
